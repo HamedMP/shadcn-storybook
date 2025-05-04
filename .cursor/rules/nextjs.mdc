@@ -5,4 +5,4 @@ alwaysApply: true
 ---
 
 - use path aliases from [tsconfig.json](mdc:shadcn-storybook/tsconfig.json)
-- 
+- my installed libs are [package.json](mdc:shadcn-storybook/package.json)[](mdc:shadcn-storybook/tsconfig.json)
