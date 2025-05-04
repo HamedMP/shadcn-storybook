@@ -1,13 +1,26 @@
 import type { StorybookConfig } from "@storybook/nextjs";
+import remarkGfm from "remark-gfm";
 
 const config: StorybookConfig = {
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+  stories: [
+    "../src/components/**/*.mdx",
+    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+  ],
   addons: [
     "@storybook/addon-essentials",
-    "@storybook/addon-onboarding",
     "@chromatic-com/storybook",
     "@storybook/experimental-addon-test",
     "@storybook/addon-themes",
+    {
+      name: "@storybook/addon-docs",
+      options: {
+        mdxPluginOptions: {
+          mdxCompileOptions: {
+            remarkPlugins: [remarkGfm],
+          },
+        },
+      },
+    },
   ],
   framework: {
     name: "@storybook/nextjs",
@@ -18,6 +31,9 @@ const config: StorybookConfig = {
     },
   },
   staticDirs: ["../public"],
+  docs: {
+    defaultName: "Documentation",
+  },
   managerHead: (head) => `
     ${head}
     <link rel="icon" href="/favicon.ico" />

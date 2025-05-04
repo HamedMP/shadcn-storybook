@@ -1,0 +1,147 @@
+import { ColorItem, ColorPalette, Typeset } from "@storybook/blocks";
+
+import {
+  Meta,
+  Primary,
+  Controls,
+  Story,
+  Description,
+  IconGallery,
+} from "@storybook/blocks";
+import * as AccordionStories from "./accordion.stories";
+import * as AlertStories from "./alert.stories";
+import * as AlertDialogStories from "./alert-dialog.stories";
+import * as AspectRatioStories from "./aspect-ratio.stories";
+import * as AvatarStories from "./avatar.stories";
+import * as BadgeStories from "./badge.stories";
+import * as BreadcrumbStories from "./breadcrumb.stories";
+import * as ButtonStories from "./button.stories";
+import * as CalendarStories from "./calendar.stories";
+import * as CardStories from "./card.stories";
+import * as CarouselStories from "./carousel.stories";
+import * as ChartStories from "./chart.stories";
+import * as CheckboxStories from "./checkbox.stories";
+import * as CollapsibleStories from "./collapsible.stories";
+import * as CommandStories from "./command.stories";
+import * as ContextMenuStories from "./context-menu.stories";
+import * as DialogStories from "./dialog.stories";
+import * as DrawerStories from "./drawer.stories";
+import * as DropdownMenuStories from "./dropdown-menu.stories";
+import * as FormStories from "./form.stories";
+import * as HoverCardStories from "./hover-card.stories";
+import * as InputStories from "./input.stories";
+import * as InputOTPStories from "./input-otp.stories";
+import * as LabelStories from "./label.stories";
+import * as MenubarStories from "./menubar.stories";
+import * as NavigationMenuStories from "./navigation-menu.stories";
+import * as PaginationStories from "./pagination.stories";
+import * as PopoverStories from "./popover.stories";
+import * as ProgressStories from "./progress.stories";
+import * as RadioGroupStories from "./radio-group.stories";
+import * as ResizableStories from "./resizable.stories";
+import * as ScrollAreaStories from "./scroll-area.stories";
+import * as SelectStories from "./select.stories";
+import * as SeparatorStories from "./separator.stories";
+import * as SheetStories from "./sheet.stories";
+import * as SidebarStories from "./sidebar.stories";
+import * as SkeletonStories from "./skeleton.stories";
+import * as SliderStories from "./slider.stories";
+import * as SonnerStories from "./sonner.stories";
+import * as SwitchStories from "./switch.stories";
+import * as TableStories from "./table.stories";
+import * as TabsStories from "./tabs.stories";
+import * as TextareaStories from "./textarea.stories";
+import * as ToggleStories from "./toggle.stories";
+import * as ToggleGroupStories from "./toggle-group.stories";
+import * as TooltipStories from "./tooltip.stories";
+
+<Meta title="README" />
+
+# shadcn/ui Storybook
+
+[shadcn/ui](https://ui.shadcn.com/) is a set of beautifully-designed, accessible components and a code distribution platform. This Storybook provides a [component-driven](https://www.componentdriven.org/) development environment for shadcn/ui components.
+
+## About
+
+**This is not a component library. It is how you build your component library.**
+
+shadcn/ui is built around several key principles:
+
+- **Open Code:** The component code is open for modification
+- **Composition:** Components use a common, composable interface
+- **Beautiful Defaults:** Carefully chosen default styles
+- **AI-Ready:** Open code for LLMs to read and understand
+
+This Storybook environment adds extra benefits:
+
+- Interactive component previews
+- Props documentation and controls
+- Component state management
+- Visual testing
+- Component isolation
+
+## Components
+
+Browse our component collection:
+
+### [All components](/docs/shadcn-ui-components)
+
+## MDX Documentation
+
+This Storybook uses MDX (Markdown + JSX) for rich, interactive documentation. MDX files mix Markdown and JavaScript/JSX to create:
+
+- Readable documentation with Markdown syntax
+- Interactive stories with Component Story Format (CSF)
+- Embedded JSX component blocks
+
+Each component documentation includes:
+
+- Live examples
+- Interactive controls
+- API documentation
+- Code snippets
+
+## Component Controls
+
+Interact with component props directly:
+
+<Controls of={ButtonStories.Default} />
+
+## Credits
+
+- [shadcn/ui](https://ui.shadcn.com/) - @shadcn and the shadcn-ui team
+- [Radix UI](https://radix-ui.com) - For the primitives
+- [Storybook](https://storybook.js.org/) - @storybookjs
+- Maintained by [@hamedmp](https://github.com/hamedmp)
+
+## Installation
+
+To add more shadcn components to your project:
+
+```bash
+pnpm dlx shadcn@latest add <component-name>
+```
+
+To add all shadcn components:
+
+```bash
+pnpm dlx shadcn@latest add accordion alert alert-dialog aspect-ratio avatar \
+            badge breadcrumb button \
+            calendar card carousel chart checkbox collapsible command context-menu \
+            dialog drawer dropdown-menu \
+            form \
+            hover-card \
+            input \
+            input-otp \
+            label \
+            menubar \
+            navigation-menu \
+            pagination popover progress \
+            radio-group resizable \
+            scroll-area select separator sheet sidebar skeleton slider sonner switch \
+            table tabs textarea toggle toggle-group tooltip
+```
+
+## License
+
+MIT © [shadcn](https://ui.shadcn.com/) and [@hamedmp](https://github.com/hamedmp)

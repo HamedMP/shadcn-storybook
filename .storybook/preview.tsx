@@ -2,6 +2,8 @@ import type { Preview } from "@storybook/react";
 import { withThemeByClassName } from "@storybook/addon-themes";
 
 import "@/styles/globals.css";
+import { Toaster } from "sonner";
+// import "@/styles/mdx.css";
 
 export const decorators = [
   withThemeByClassName({
@@ -22,7 +24,18 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    docs: {
+      toc: true,
+    },
   },
+  decorators: [
+    (Story) => (
+      <>
+        {/* 👇 Decorators in Storybook also accept a function. Replace <Story/> with Story() to enable it  */}
+        <Story />
+      </>
+    ),
+  ],
 };
 
 export default preview;

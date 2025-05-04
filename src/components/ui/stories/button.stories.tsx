@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
 
-import { Button } from "../button";
+import { Button } from "@/ui/button";
 
 const meta: Meta<typeof Button> = {
   title: "shadcn-ui/components/Button",
