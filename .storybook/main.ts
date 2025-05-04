@@ -18,5 +18,13 @@ const config: StorybookConfig = {
     },
   },
   staticDirs: ["../public"],
+  managerHead: (head) => `
+    ${head}
+    <link rel="icon" href="/favicon.ico" />
+  `,
+  previewHead: (head) => `
+    ${head}
+    <link rel="icon" href="/favicon.ico" />
+  `,
 };
 export default config;
