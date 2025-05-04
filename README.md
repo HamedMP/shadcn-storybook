@@ -41,4 +41,4 @@ pnpm dlx shadcn@latest add accordion alert alert-dialog aspect-ratio avatar \
 
 ## License
 
-MIT © [shadcn](https://shadcn.com)
+- MIT
