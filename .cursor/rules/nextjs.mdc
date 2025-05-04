@@ -1,0 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+- use path aliases from [tsconfig.json](mdc:shadcn-storybook/tsconfig.json)
+- 
